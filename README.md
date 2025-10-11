@@ -324,20 +324,30 @@ Create comprehensive guide of bioinformatics databases, tools, and workflow reco
 
 ## 🚀 使用 npx 快速启动（推荐）
 
-无需安装，直接在 Cursor / Cherry Studio 的 MCP 配置中使用：
+### 使用 NPX 一键启动
+
+```bash
+npx bach-biotools-server
+```
+
+### 在 Cursor / Cherry Studio 中配置
+
+无需安装，直接在 MCP 配置中使用：
 
 ```json
 {
   "mcpServers": {
     "biotools": {
       "command": "npx",
-      "args": ["-y", "biotools-mcp-server"]
+      "args": ["-y", "bach-biotools-server"]
     }
   }
 }
 ```
 
-保存配置后重启，`npx` 会自动从 npm 下载并运行最新版本的 biotools-mcp-server。
+保存配置后重启，`npx` 会自动从 npm 下载并运行最新版本的 bach-biotools-server。
+
+**包地址**: https://www.npmjs.com/package/bach-biotools-server
 
 ---
 
@@ -351,7 +361,7 @@ Create comprehensive guide of bioinformatics databases, tools, and workflow reco
 ### Manual Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/rongquanfeng/biotools-mcp-server.git
 cd biotools-mcp-server
 npm install
 npm run build
@@ -409,18 +419,20 @@ npm run inspect
 
 ## 🔧 Configuration
 
-Add to your MCP client configuration:
+如果需要手动配置（不使用 npx），可以添加到 MCP 配置：
 
 ```json
 {
   "mcpServers": {
     "biotools": {
       "command": "node",
-      "args": ["path/to/biotools-mcp-server/build/index.js"]
+      "args": ["/path/to/biotools-mcp-server/build/index.js"]
     }
   }
 }
 ```
+
+**推荐使用上面的 npx 方式，更简单且自动获取最新版本。**
 
 ## 📋 Features
 
