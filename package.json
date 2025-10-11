@@ -1,6 +1,6 @@
 {
   "name": "bach-biotools-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server providing access to biotools and scientific literature via PubMed",
   "main": "build/index.js",
   "scripts": {
@@ -25,12 +25,12 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rongquanfeng/biotools-mcp-server.git"
+    "url": "https://github.com/BACH-AI-Tools/biotools-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/rongquanfeng/biotools-mcp-server/issues"
+    "url": "https://github.com/BACH-AI-Tools/biotools-mcp-server/issues"
   },
-  "homepage": "https://github.com/rongquanfeng/biotools-mcp-server#readme",
+  "homepage": "https://github.com/BACH-AI-Tools/biotools-mcp-server#readme",
   "engines": {
     "node": ">=18.0.0"
   },

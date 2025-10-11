@@ -361,7 +361,7 @@ npx bach-biotools-server
 ### Manual Installation
 
 ```bash
-git clone https://github.com/rongquanfeng/biotools-mcp-server.git
+git clone https://github.com/BACH-AI-Tools/biotools-mcp-server.git
 cd biotools-mcp-server
 npm install
 npm run build
